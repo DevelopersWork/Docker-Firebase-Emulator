@@ -14,3 +14,7 @@ RUN firebase --version
 COPY package.json ./
 
 RUN npm i
+
+COPY functions/package.json ./functions/package.json
+
+RUN cd functions && npm i 

@@ -1,7 +1,9 @@
 version: "3.0"
 services:
   firebase-emulator:
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile.firebase_emulator
     image: firebase-emulator:firebase-emulator
     volumes:
       - .:/app
